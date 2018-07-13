@@ -27,6 +27,7 @@ int main(int argc, char * argv[]){
 	// If two inputs are provided, user defined divisors are used
 	// Allows divisors to be entered in any order
 	if (argc == 3){
+		max = 1000;
 		lo_div = atoi(argv[1]);
 		hi_div = atoi(argv[2]);
 		if (lo_div > hi_div){
