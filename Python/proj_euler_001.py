@@ -7,10 +7,10 @@ def main():
     for i in range(0,1000):
         if i % 3 == 0 and i % 5 == 0:
             sums -= i
-		if i % 3 == 0 or i % 5 == 0:
-			sums += i
+	if i % 3 == 0 or i % 5 == 0:
+	    sums += i
     print(sums)
-	ex = input("Press any key to exit.")
-	print(ex)
+    ex = input("Press any key to exit.")
+    print(ex)
 
 main()
