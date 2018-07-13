@@ -1,5 +1,6 @@
 /* Project Euler Problem 3
  * 		A solution to problem 3 from projecteuler.net
+ *		Includes variable run mode which allows the user to enter a different value to factor as argument
  * 		By Kevin Moore
  */
  
@@ -44,7 +45,14 @@ unsigned long int largestFactor(unsigned long int val){
  }
  
  int main(int argc, char * argv[]){
-	 unsigned long int val = EVEN;
+	 unsigned long int val;
+	 if (argc == 1){
+		 val = MAX;
+	 }
+	 else if (argc == 2){
+		 val = atoi(argv[1]);
+	 }
+	 
 	 unsigned long int max_prime_factor = largestFactor(val);
 	 printf("The maximum prime factor of %lu is %lu\n", val, max_prime_factor);
 	 
