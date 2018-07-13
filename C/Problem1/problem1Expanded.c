@@ -66,5 +66,5 @@ int main(int argc, char * argv[]){
 	}
 	
 	printf("The sum of all the multiples of %d or %d below %d is: %lu\n",lo_div, hi_div, max, sum);
-	
+	return 0;
 }

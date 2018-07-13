@@ -1,21 +1,17 @@
-# This program will the sum of all Fibonacci numbers
-# below 4000000
-# By Meaj
+# This program will the sum of all Fibonacci numbers below 4000000
+# By Kevin Moore
 
 def main():
     sums = 0
-    a = 1
-    b = 1
-    while a <= 4000000 and b <= 4000000:
-        a = a+b
-        print(a)
-        b = b + a
-        print(b)
-        
-        if a % 2 == 0:
-            sums += a
-        if b % 2 == 0:
-            sums += b
-    print(sums)
+    tmp = 0
+    lo = 1
+    hi = 2
+    while hi <= 4000000:
+        tmp = hi
+        hi = tmp + lo
+        lo = tmp
 
+        if lo % 2 == 0:
+            sums += lo
+    print("The sum of all even fibonacci numbers less than 400000 is " + str(sums))
 main()
