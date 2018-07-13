@@ -10,8 +10,8 @@ def main():
         tmp = hi
         hi = tmp + lo
         lo = tmp
-
         if lo % 2 == 0:
             sums += lo
+
     print("The sum of all even fibonacci numbers less than 400000 is " + str(sums))
 main()
