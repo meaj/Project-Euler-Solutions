@@ -18,7 +18,7 @@
  
 unsigned long int largestFactor(unsigned long int val){
 	 int i = 0;
-	 // The larges possible prime factor, will be less than the square root
+	 // The largest possible prime factor, will be less than the square root
 	 int max = (int)sqrt((long double) val);
 	 
 	 // Factors out 2 until result is odd or 2 is reached
