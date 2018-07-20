@@ -37,21 +37,21 @@ def binary_gcd(int_a, int_b):
 '''
 Iterative Least Common Multiple of a Range function
 calculates the lcm for a range of values where lcm(a,b) = a * b / gcd(a,b)
-this iterates through each value in the range, updating max (corresponds to a) by
+this iterates through each value in the range, updating lcm_val (corresponds to a) by
 setting it to the lcm of the current maximum and the current val (corresponds to b) at each step in the range
-since max = 1 to start, the range can begin at 2
+since lcm_val = 1 to start, the range can begin at 2
 '''
 def iterative_lcm(int_a, int_b):
-    max = int_a
+    lcm_val = int_a
 
     for val in range(int_a, int_b+1):
-        max = max * val // binary_gcd(val, max)
+        lcm_val = lcm_val * val // binary_gcd(val, lcm_val)
 
-    return max
+    return lcm_val
 
 
 def main():
-    print(str(iterative_lcm(1,20)))
+    print("The least common multiple of the range of vales from 1 to 20 is " + str(int(iterative_lcm(1,20))))
 
 
 main()
