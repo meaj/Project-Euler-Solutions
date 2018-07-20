@@ -10,3 +10,4 @@ My implementations of solutions to problems from [projecteuler.net](https://proj
 * ***proj_euler_004.py*** - A solution to problem 4 as asked
 * ***proj_euler_005.py*** - A solution to problem 5 as asked
 * ***proj_euler_006.py*** - A solution to problem 6 as asked
+* ***proj_euler_007.py*** - A solution to problem 7 as asked
