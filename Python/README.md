@@ -12,3 +12,4 @@ My implementations of solutions to problems from [projecteuler.net](https://proj
 * ***proj_euler_006.py*** - A solution to problem 6 as asked
 * ***proj_euler_007.py*** - A solution to problem 7 as asked
 * ***proj_euler_008.py*** - A solution to problem 8 as asked
+* ***proj_euler_009.py*** - A solution to problem 9 as asked
