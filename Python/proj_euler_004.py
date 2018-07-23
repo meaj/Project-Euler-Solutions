@@ -5,7 +5,7 @@ By Kevin Moore
 
 '''
 Iterative Palindrome Over Range function
-Returns a list of palindromes fromed by all values in the range int_a to int_b
+Returns a list of palindromes formed by all values in the range int_a to int_b
 '''
 def iterative_palindromes(int_a, int_b):
     palindromes = []
