@@ -43,7 +43,7 @@ def cell_product(int_x_start, int_y_start, int_x_dir, int_y_dir, int_size):
 '''
 Find Maximum in Grid function
 Returns the maximum product of n continuous cells in the graph above
-Takes sthe size n as a prameter
+Takes the size n as a prameter
 '''
 def find_max_in_grid(int_size):
     int_max = 0
