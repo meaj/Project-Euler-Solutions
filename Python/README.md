@@ -18,3 +18,4 @@ My implementations of solutions to problems from [projecteuler.net](https://proj
 * ***proj_euler_012.py*** - A solution to [problem 12](https://projecteuler.net/problem=12) as asked
 * ***proj_euler_013.py*** - A solution to [problem 13](https://projecteuler.net/problem=13) as asked
 * ***proj_euler_014.py*** - A solution to [problem 14](https://projecteuler.net/problem=14) as asked
+* ***proj_euler_015.py*** - A solution to [problem 15](https://projecteuler.net/problem=15) as asked
