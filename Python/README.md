@@ -21,3 +21,4 @@ My implementations of solutions to problems from [projecteuler.net](https://proj
 * ***proj_euler_015.py*** - A solution to [problem 15](https://projecteuler.net/problem=15) as asked
 * ***proj_euler_016.py*** - A solution to [problem 16](https://projecteuler.net/problem=16) as asked
 * ***proj_euler_017.py*** - A solution to [problem 17](https://projecteuler.net/problem=17) as asked
+* ***proj_euler_018.py*** - A solution to [problem 18](https://projecteuler.net/problem=18) as asked
