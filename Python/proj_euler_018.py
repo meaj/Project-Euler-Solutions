@@ -3,6 +3,8 @@ This program finds the maximum path in a triangle of values
 By Kevin Moore
 """
 
+from proj_euler_000 import find_triangle_path
+
 # Triangle of values to find the maximum path through
 lst_triangle = [
     [75],
@@ -22,19 +24,8 @@ lst_triangle = [
     [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]
 ]
 
-def find_path(lst_input):
-    # Copy the input into an empty triangle that can store the maximum path of each sub triangle at given indices
-    lst_paths = lst_input
-    # Starting at the second from the bottom row, add up the maximum value of the lower neighbors of a given index
-    for row in reversed(range(len(lst_input) - 1)):
-        for col in range(len(lst_input[row])):
-            lst_paths[row][col] += max(lst_input[row+1][col], lst_input[row+1][col+1])
-        #print("The max paths of rows " + str(row) + " and " + str(row+1))
-        #print(lst_paths[row])
-    # After calculation, the maximum value will be at the top
-    return lst_paths[0][0]
 
 def main():
-    print("The maximum path through the triangle is " + str(find_path(lst_triangle)))
+    print("The maximum path through the triangle is " + str(find_triangle_path(lst_triangle)))
 
 main()

@@ -4,6 +4,7 @@
 My implementations of solutions to problems from [projecteuler.net](https://projecteuler.net/)
 
 ### Contents
+* ***proj_euler_000.py*** - A module containing commonly used functions
 * ***proj_euler_001.py*** - A solution to [problem 1](https://projecteuler.net/problem=1) as asked
 * ***proj_euler_002.py*** - A solution to [problem 2](https://projecteuler.net/problem=2) as asked
 * ***proj_euler_003.py*** - A solution to [problem 3](https://projecteuler.net/problem=3) as asked

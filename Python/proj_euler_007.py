@@ -3,23 +3,7 @@ This program finds the 10,001st prime number
 By Kevin Moore
 '''
 
-from math import sqrt
-
-'''
-Primality Check Function
-Checks if a value val is prime or not. Returns true or false respectively
-'''
-def is_prime(val):
-    # handles case where the number to be tested is less than 2
-    if val < 2:
-        return False
-
-    # checks primality of the number from 2 to sqrt(val)
-    for number in range(2, int(sqrt(val) + 1)):
-        if val % number == 0:
-            return False
-
-    return True
+from proj_euler_000 import is_prime
 
 '''
 Nth Prime Generation Function

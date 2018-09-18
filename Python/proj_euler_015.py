@@ -4,17 +4,7 @@ By Kevin Moore
 """
 
 
-# Finds the factorial of a value n recursively
-def factorial_recur(n):
-    if (n == 0):
-        return 1
-    else:
-        return n * factorial_recur(n-1)
-
-
-# Finds the binomial coefficient of two values n and k
-def n_choose_k(n, k):
-    return factorial_recur(n)/(factorial_recur(k)*factorial_recur(n-k))
+from proj_euler_000 import n_choose_k
 
 
 # finds the number of possible routes using only right and down turns in an N x N grid

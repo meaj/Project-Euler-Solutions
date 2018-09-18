@@ -3,23 +3,7 @@ This program finds the sum of all primes less than 2,000,000
 By Kevin Moore
 '''
 
-from math import sqrt
-
-'''
-Primality Check Function
-Checks if a value int_val is prime or not. Returns true or false respectively
-'''
-def is_prime(int_val):
-    # handles case where the number to be tested is less than 2
-    if int_val < 2:
-        return False
-
-    # checks primality of the number from 2 to sqrt(int_val)
-    for number in range(2, int(sqrt(int_val) + 1)):
-        if int_val % number == 0:
-            return False
-
-    return True
+from proj_euler_000 import is_prime
 
 '''
 Sum of Primes function

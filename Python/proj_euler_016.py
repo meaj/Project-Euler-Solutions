@@ -4,13 +4,7 @@ By Kevin Moore
 """
 
 
-# Gets the sum of the digits of the value passed into it
-def get_digit_sum(int_value):
-    int_sum = 0
-    str_value = str(int_value)
-    for i in str_value:
-        int_sum += int(i)
-    return int_sum
+from proj_euler_000 import get_digit_sum
 
 
 def main():
