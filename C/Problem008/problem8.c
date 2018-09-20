@@ -28,17 +28,27 @@ char sNumber[] = "73167176531330624919225119674426574742355349194934"
                  "05886116467109405077541002256983155200055935729725"
                  "71636269561882670428252483600823257530420752963450";
 
-unsigned long calculateLargestProduct(int iRange){
+unsigned long calculateProduct(int iStart, int iRange){
+    unsigned long ulProduct = 1;
+    int i;
+    // Calculate product
+    for (i = 0; i < iRange; i++){
+        ulProduct *= (sNumber[iStart + i] - '0');
+    }
+    return ulProduct;
+}
+
+unsigned long findLargestProduct(int iRange){
     // Declare counters, length, and product holders
     unsigned long ulMaxProduct = 0, ulProduct;
     int iLen = sizeof(sNumber);
     int i, j;
 
+    // Cycle through each 13 character iteration
     for (i = 0; i < iLen - iRange; i++){
-        ulProduct = 1;
-        for (j = 0; j < iRange; j++){
-            ulProduct =ulProduct * (sNumber[i+j] - '0');
-        }
+        // Find the product of the current substring
+        ulProduct = calculateProduct(i, iRange);
+
         if (ulProduct > ulMaxProduct)
             ulMaxProduct = ulProduct;
     }
@@ -46,6 +56,6 @@ unsigned long calculateLargestProduct(int iRange){
 }
 
 int main(int argc, char * argv[]){
-    unsigned long int ulOut = calculateLargestProduct(13);
+    unsigned long ulOut = findLargestProduct(13);
     printf("The largest product of 13 consecutive digits in the given number is: %lu\n", ulOut);
 }
