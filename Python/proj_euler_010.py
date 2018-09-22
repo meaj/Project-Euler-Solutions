@@ -1,7 +1,7 @@
-'''
+"""
 This program finds the sum of all primes less than 2,000,000
 By Kevin Moore
-'''
+"""
 
 from proj_euler_000 import is_prime
 
