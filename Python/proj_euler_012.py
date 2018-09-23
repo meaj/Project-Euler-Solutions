@@ -19,9 +19,9 @@ def get_num_divisors(int_val):
     for i in range(1, int(int_end)):
         if (int_val % i == 0):
             int_count += 2
-    # Remove int_val^2 from the count
-    if (int_val ** 2 == int_val):
-        int_count -= 1
+        # Remove int_val^2 from the count
+        if (i ** 2 == int_val):
+            int_count -= 1
     return int_count
 
 '''
