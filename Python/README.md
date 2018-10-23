@@ -4,6 +4,7 @@
 My implementations of solutions to problems from [projecteuler.net](https://projecteuler.net/)
 
 ### Contents
+* ***Inputs*** - A subdirectory of input files needed by some solutions
 * ***proj_euler_000.py*** - A module containing commonly used functions
 * ***proj_euler_001.py*** - A solution to [problem 1](https://projecteuler.net/problem=1) as asked
 * ***proj_euler_002.py*** - A solution to [problem 2](https://projecteuler.net/problem=2) as asked
@@ -26,5 +27,5 @@ My implementations of solutions to problems from [projecteuler.net](https://proj
 * ***proj_euler_019.py*** - A solution to [problem 19](https://projecteuler.net/problem=19) as asked
 * ***proj_euler_020.py*** - A solution to [problem 20](https://projecteuler.net/problem=20) as asked
 * ***proj_euler_021.py*** - A solution to [problem 21](https://projecteuler.net/problem=21) as asked
-
+* ***proj_euler_022.py*** - A solution to [problem 22](https://projecteuler.net/problem=22) as asked
 * ***proj_euler_023.py*** - A solution to [problem 23](https://projecteuler.net/problem=23) as asked 
